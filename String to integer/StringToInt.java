@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.*;
 
 public class StringToInt {
 	public static void main(String args[]){
@@ -9,41 +10,58 @@ public class StringToInt {
 		// if matches prints the respective numbers
 		// the code accepts the string that has numbers and normal text as well
 		// but only prints the numbers present in the string
+		int number=0, count=str.length()-1;
 		for(int i=0;i<str.length();i++){
 			switch(str.charAt(i)){
 			case 48:
-				System.out.print(0);
+				number = (int) (number+(0*Math.pow(10,count)));
+				
 				break;
 			case 49:
-				System.out.print(1);
+				number = (int) (number+(1*Math.pow(10,count)));
+				
 				break;
 			case 50:
-				System.out.print(2);
+				number = (int) (number+(2*Math.pow(10,count)));
+				
 				break;
 			case 51:
-				System.out.print(3);
+				number = (int) (number+(3*Math.pow(10,count)));
+				
 				break;
+				
 			case 52:
-				System.out.print(4);
+				number = (int) (number+(4*Math.pow(10,count)));
+				
 				break;
 			case 53:
-				System.out.print(5);
+				number = (int) (number+(5*Math.pow(10,count)));
+				
 				break;
 			case 54:
-				System.out.print(6);
+				number = (int) (number+(6*Math.pow(10,count)));
+				
 				break;
 			case 55:
-				System.out.print(7);
+				number = (int) (number+(7*Math.pow(10,count)));
+				
 				break;
 			case 56:
-				System.out.print(8);
+				number = (int) (number+(8*Math.pow(10,count)));
+				
 				break;
 			case 57:
-				System.out.print(9);
+				number = (int) (number+(9*Math.pow(10,count)));
+				
 				break;
 			default:
 				break;
 			}
+			count--;
+
+			
 		}
+		System.out.println();
+		System.out.println(number);
 	}
 }
